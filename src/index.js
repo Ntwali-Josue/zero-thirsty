@@ -24,14 +24,6 @@ const getDrinks = async () => {
 
 getDrinks();
 
-const Items = {
-  drinkImg: drink,
-  drinkTitle: 'Testing',
-  drinkLike: heart,
-  drinklikes: 21,
-  drinkComment: '',
-};
-
 likeButton.forEach((img) => {
   img.src = heart;
 });
