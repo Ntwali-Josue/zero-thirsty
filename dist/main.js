@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _images_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/logo.png */ \"./src/images/logo.png\");\n\n\nconst root = document.querySelector('.root');\nconst header = document.createElement('header');\nheader.innerHTML = `<nav class=\"nav\">\n<img src=\"${_images_logo_png__WEBPACK_IMPORTED_MODULE_1__}\" alt=\"logo image\">\n<ul class=\"nav-list\">\n  <li>Restaurents(6)</li>\n  <li>About</li>\n  <li>Contacts</li>\n</ul>\n</nav>`;\nroot.appendChild(header);\n\n//# sourceURL=webpack://kanband-board/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _images_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/logo.png */ \"./src/images/logo.png\");\n\n\nconst root = document.querySelector('.root');\nconst header = document.createElement('header');\nheader.innerHTML = `<nav class=\"nav\">\n<img src=\"${_images_logo_png__WEBPACK_IMPORTED_MODULE_1__}\" alt=\"logo image\">\n<ul class=\"nav-list\">\n  <li>CockTails(0)</li>\n  <li>Alcoholic</li>\n  <li>Non-alcoholic</li>\n</ul>\n</nav>`;\nroot.appendChild(header);\n\n//# sourceURL=webpack://kanband-board/./src/index.js?");
 
 /***/ }),
 
