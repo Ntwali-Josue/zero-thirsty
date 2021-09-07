@@ -32,8 +32,6 @@ getDrinks();
 
 let counter = 0;
 
-// drinkLikes.textContent = '$ likes';
-
 drinkLikes.forEach((like) => {
   like.textContent = `${counter} likes`;
 });
