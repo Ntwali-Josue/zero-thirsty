@@ -1,15 +1,15 @@
 import './style.css';
-import logo from './logo.PNG';
+import logoImg from './images/logo.png';
 
 const root = document.querySelector('.root');
 const header = document.createElement('header');
 
 header.innerHTML = `<nav class="nav">
-<img src="${logo}" alt="logo image">
+<img src="${logoImg}" alt="logo image">
 <ul class="nav-list">
-  <li>Restaurents(6)</li>
-  <li>About</li>
-  <li>Contacts</li>
+  <li>CockTails(0)</li>
+  <li>Alcoholic</li>
+  <li>Non-alcoholic</li>
 </ul>
 </nav>`;
 

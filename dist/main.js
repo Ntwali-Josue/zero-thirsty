@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _logo_PNG__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./logo.PNG */ \"./src/logo.PNG\");\n\n\nconst root = document.querySelector('.root');\nconst header = document.createElement('header');\nconst footer = document.createElement('footer');\nheader.innerHTML = `<nav class=\"nav\">\n<img src=\"${_logo_PNG__WEBPACK_IMPORTED_MODULE_1__}\" alt=\"logo image\">\n<ul class=\"nav-list\">\n  <li>Restaurents(6)</li>\n  <li>About</li>\n  <li>Contacts</li>\n</ul>\n</nav>`;\nfooter.innerHTML = '<h4>Created by Karangwa ntwali Josue and Ángel Díaz under Microverse</h4>';\nroot.appendChild(header);\nroot.appendChild(footer);\n\n//# sourceURL=webpack://kanband-board/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _images_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/logo.png */ \"./src/images/logo.png\");\n\n\nconst root = document.querySelector('.root');\nconst header = document.createElement('header');\nheader.innerHTML = `<nav class=\"nav\">\n<img src=\"${_images_logo_png__WEBPACK_IMPORTED_MODULE_1__}\" alt=\"logo image\">\n<ul class=\"nav-list\">\n  <li>Restaurents(6)</li>\n  <li>About</li>\n  <li>Contacts</li>\n</ul>\n</nav>`;\nroot.appendChild(header);\n\n//# sourceURL=webpack://kanband-board/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\r\\n  padding: 0;\\r\\n  margin: 0;\\r\\n}\\r\\n\\r\\n.nav {\\r\\n  display: flex;\\r\\n  justify-content: center;\\r\\n  margin-top: 90px;\\r\\n}\\r\\n\\r\\n.nav-list {\\r\\n  display: flex;\\r\\n}\\r\\n\\r\\n.nav-list li {\\r\\n  font-size: 24px;\\r\\n  list-style: none;\\r\\n  padding: 20px;\\r\\n}\\r\\n\\r\\nfooter {\\r\\n  border: 1px solid #000;\\r\\n  padding: 10px 0;\\r\\n  position: absolute;\\r\\n  text-align: left;\\r\\n  bottom: 0;\\r\\n  width: 100%;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://kanband-board/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\r\\n  padding: 0;\\r\\n  margin: 0;\\r\\n}\\r\\n\\r\\n.nav {\\r\\n  display: flex;\\r\\n  justify-content: center;\\r\\n  margin-top: 90px;\\r\\n}\\r\\n\\r\\n.nav-list {\\r\\n  display: flex;\\r\\n}\\r\\n\\r\\n.nav-list li {\\r\\n  font-size: 24px;\\r\\n  list-style: none;\\r\\n  padding: 20px;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://kanband-board/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -110,13 +110,13 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
 
 /***/ }),
 
-/***/ "./src/logo.PNG":
-/*!**********************!*\
-  !*** ./src/logo.PNG ***!
-  \**********************/
+/***/ "./src/images/logo.png":
+/*!*****************************!*\
+  !*** ./src/images/logo.png ***!
+  \*****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"303c82984156e5c3b4a9.PNG\";\n\n//# sourceURL=webpack://kanband-board/./src/logo.PNG?");
+eval("module.exports = __webpack_require__.p + \"94c5143ff41acc87dde5.png\";\n\n//# sourceURL=webpack://kanband-board/./src/images/logo.png?");
 
 /***/ })
 
