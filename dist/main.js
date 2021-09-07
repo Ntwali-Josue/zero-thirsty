@@ -16,27 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/logo.png */ \"./src/images/logo.png\");\n/* harmony import */ var _images_heart_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/heart.svg */ \"./src/images/heart.svg\");\n/* harmony import */ var _images_drink_PNG__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/drink.PNG */ \"./src/images/drink.PNG\");\n\n\n\nconst logoImg = document.querySelector('.logo');\nlogoImg.src = _images_logo_png__WEBPACK_IMPORTED_MODULE_0__;\nconst likeButton = document.querySelector('#like');\nlikeButton.src = _images_heart_svg__WEBPACK_IMPORTED_MODULE_1__;\nconst drinkImage = document.querySelector('#card-img');\ndrinkImage.src = _images_drink_PNG__WEBPACK_IMPORTED_MODULE_2__;\nconst Items = {\n  drinkImg: drinkImage,\n  drinkTitle: 'Testing',\n  drinkLike: likeButton,\n  drinklikes: 21,\n  drinkComment: ''\n};\nconst card = document.querySelector('#card-container');\nconst container = document.createElement('div');\ncontainer.innerHTML = `\n<img src=\"${Items.drinkImg}\" class=\"card-img-top\" id=\"card-img\" alt=\"Drink Image\">\n<div class=\"card\">\n  <div class=\"card-body\">\n    <div class=\"d-flex justify-content-between\">\n      <h5 class=\"card-title\">${Items.drinkTitle}</h5>\n      <img id=\"like\" alt=\"Like button\">\n    </div>\n    <p class=\"card-text\">With supporting text below as a natural lead-in to additional content.</p>\n    <a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\n  </div>\n`;\ncard.appendChild(container);\n\n//# sourceURL=webpack://kanband-board/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/images/drink.PNG":
-/*!******************************!*\
-  !*** ./src/images/drink.PNG ***!
-  \******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"303c82984156e5c3b4a9.PNG\";\n\n//# sourceURL=webpack://kanband-board/./src/images/drink.PNG?");
-
-/***/ }),
-
-/***/ "./src/images/heart.svg":
-/*!******************************!*\
-  !*** ./src/images/heart.svg ***!
-  \******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"1978922e78e15267f077.svg\";\n\n//# sourceURL=webpack://kanband-board/./src/images/heart.svg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/logo.png */ \"./src/images/logo.png\");\n/* harmony import */ var _images_unfilled_heart_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/unfilled-heart.svg */ \"./src/images/unfilled-heart.svg\");\n\n\nconst logoImg = document.querySelector('.logo');\nlogoImg.src = _images_logo_png__WEBPACK_IMPORTED_MODULE_0__;\nconst drinkImage = document.querySelectorAll('.card-img-top');\nconst drinkTitle = document.querySelectorAll('.card-title');\nconst likeButton = document.querySelectorAll('#like');\nlikeButton.forEach(img => {\n  img.src = _images_unfilled_heart_svg__WEBPACK_IMPORTED_MODULE_1__;\n});\nconst fetchUrl = 'https://thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic';\n\nconst getDrinks = async () => {\n  const fetchDrinks = await fetch(fetchUrl, {\n    method: 'GET'\n  });\n  const data = await fetchDrinks.json();\n\n  for (let i = 0; i < drinkImage.length; i += 1) {\n    drinkImage[i].src = data.drinks[i].strDrinkThumb;\n    drinkTitle[i].textContent = data.drinks[i].strDrink;\n  }\n\n  return data;\n};\n\ngetDrinks();\n\n//# sourceURL=webpack://kanband-board/./src/index.js?");
 
 /***/ }),
 
@@ -47,6 +27,16 @@ eval("module.exports = __webpack_require__.p + \"1978922e78e15267f077.svg\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"94c5143ff41acc87dde5.png\";\n\n//# sourceURL=webpack://kanband-board/./src/images/logo.png?");
+
+/***/ }),
+
+/***/ "./src/images/unfilled-heart.svg":
+/*!***************************************!*\
+  !*** ./src/images/unfilled-heart.svg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"1978922e78e15267f077.svg\";\n\n//# sourceURL=webpack://kanband-board/./src/images/unfilled-heart.svg?");
 
 /***/ })
 
