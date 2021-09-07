@@ -6,7 +6,7 @@
 .nav {
   display: flex;
   justify-content: center;
-  margin-top: 90px;
+  margin-top: 30px;
 }
 
 .nav-list {
@@ -17,4 +17,8 @@
   font-size: 24px;
   list-style: none;
   padding: 20px;
+}
+
+.nav-list li:hover {
+  text-decoration: underline;
 }
