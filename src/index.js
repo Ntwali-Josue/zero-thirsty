@@ -19,11 +19,20 @@ const getDrinks = async () => {
     drinkImage[i].src = data.drinks[i].strDrinkThumb;
     drinkTitle[i].textContent = data.drinks[i].strDrink;
   }
+
   return data;
 };
 
 getDrinks();
 
+const Items = {
+  drinkImg: drink,
+  drinkTitle: 'Testing',
+  drinkLike: heart,
+  drinklikes: 21,
+  drinkComment: '',
+};
+
 likeButton.forEach((img) => {
-  img.src = heart;
+  img.src = Items.drinkLike;
 });
