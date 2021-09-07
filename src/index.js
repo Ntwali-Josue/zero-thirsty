@@ -1,12 +1,14 @@
 import logo from './images/logo.png';
 import heart from './images/heart.svg';
-import drink from './images/drink.PNG';
 
 const logoImg = document.querySelector('.logo');
 logoImg.src = logo;
 const drinkImage = document.querySelectorAll('.card-img-top');
 const drinkTitle = document.querySelectorAll('.card-title');
 const likeButton = document.querySelectorAll('#like');
+likeButton.forEach((img) => {
+  img.src = heart;
+});
 
 const fetchUrl = 'https://thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic';
 
@@ -24,7 +26,3 @@ const getDrinks = async () => {
 };
 
 getDrinks();
-
-likeButton.forEach((img) => {
-  img.src = heart;
-});
