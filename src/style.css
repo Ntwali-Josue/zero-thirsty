@@ -2,3 +2,46 @@
   padding: 0;
   margin: 0;
 }
+
+.comment-window {
+  display: block;
+  padding: 2rem;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: auto;
+  width: 18.5rem;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 5;
+  box-shadow: 0 0 0.5rem 0.5rem hsla(0, 0%, 0%, 0.25);
+  transition: all 1s ease;
+}
+
+.comment-off {
+  height: 0;
+}
+
+.inner-container {
+  margin: auto;
+  max-width: 30rem;
+}
+
+.comment-box {
+  width: 15em;
+  resize: none;
+}
+
+.svg-cursor {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .comment-window {
+    width: 40rem;
+  }
+  .comment-box {
+    width: 16em;
+  }
+}

@@ -1,5 +1,7 @@
+import './style.css';
 import logo from './images/logo.png';
 import heart from './images/unfilled-heart.svg';
+import commentSection from './comment.html';
 
 const logoImg = document.querySelector('.logo');
 logoImg.src = logo;
@@ -24,5 +26,11 @@ const getDrinks = async () => {
 
   return data;
 };
+
+window.addEventListener('click', () => {
+  const commentWindow = document.getElementById('comment-window');
+  commentWindow.innerHTML = commentSection;
+  commentWindow.classList = 'comment-window';
+});
 
 getDrinks();
