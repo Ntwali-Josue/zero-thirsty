@@ -1,5 +1,5 @@
 import logo from './images/logo.png';
-import heart from './images/heart.svg';
+import heart from './images/unfilled-heart.svg';
 
 const logoImg = document.querySelector('.logo');
 logoImg.src = logo;
