@@ -1,4 +1,8 @@
 class Drink {
+  constructor(drinkID) {
+    this.id = drinkID;
+  }
+
   static getDrinkDetails = async (event) => {
     const drinkURL = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=';
     const drinkID = event.target.id.replace('drink', '');

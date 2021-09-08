@@ -3,7 +3,7 @@ import logo from './images/logo.png';
 import heart from './images/unfilled-heart.svg';
 import heartFilled from './images/filled-heart.svg';
 import Drink from './drink';
-import Comment from './comment';
+import comment from './comment';
 import addLikes from './addLike';
 
 const logoImg = document.querySelector('.logo');
@@ -38,8 +38,18 @@ const getDrinks = async () => {
 
 document.getElementById('main').addEventListener('click', async (event) => {
   if (event.target.id.includes('drink')) {
-    const drink = await Drink.getDrinkDetails(event);
-    Comment.loadContent(drink);
+    const apiDrink = await Drink.getDrinkDetails(event);
+    const drink = new Drink(apiDrink.idDrink);
+    comment.loadContent(apiDrink);
+    await comment.getComments(drink.id);
+    comment.loadComments();
+
+    document.getElementById('send-comment').addEventListener('click', async () => {
+      comment.getCommenterData();
+      await comment.sendComment(drink.id, comment.commenterData);
+      await comment.getComments(drink.id);
+      comment.loadComments();
+    });
 
     document.getElementById('close').addEventListener('click', () => {
       const comentWindow = document.getElementById('comment-window');
