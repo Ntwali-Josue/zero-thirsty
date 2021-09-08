@@ -7,8 +7,9 @@ const logoImg = document.querySelector('.logo');
 logoImg.src = logo;
 const drinkImage = document.querySelectorAll('.card-img-top');
 const drinkTitle = document.querySelectorAll('.card-title');
-const drinkLikes = document.querySelectorAll('.card-text');
+// const drinkLikes = document.querySelectorAll('.card-text');
 const likeButton = document.querySelectorAll('#like');
+const numOfLikes = document.querySelectorAll('.counter');
 likeButton.forEach((img) => {
   img.src = heart;
 });
@@ -30,15 +31,15 @@ const getDrinks = async () => {
 
 getDrinks();
 
-let counter = 0;
-
-drinkLikes.forEach((like) => {
-  like.textContent = `${counter} likes`;
+numOfLikes.forEach((num) => {
+  num.textContent = 0;
 });
+
 for (let i = 0; i < likeButton.length; i += 1) {
+  let counter = 0;
   likeButton[i].addEventListener('click', () => {
     counter += 1;
+    numOfLikes[i].textContent = counter;
     likeButton[i].src = heartFilled;
-    drinkLikes[i].textContent = `${counter} likes`;
   });
 }
