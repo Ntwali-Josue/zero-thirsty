@@ -5,7 +5,7 @@
 
 .comment-window {
   display: block;
-  padding: 2rem;
+  padding: 1rem;
   position: absolute;
   top: 15%;
   left: 50%;
@@ -23,6 +23,17 @@
   height: 0;
 }
 
+.close-img {
+  position: relative;
+  z-index: 6;
+  right: 20%;
+  padding-top: 0.9rem;
+}
+
+.close-img svg {
+  fill: white;
+}
+
 .inner-container {
   margin: auto;
   max-width: 30rem;
@@ -34,14 +45,26 @@
 }
 
 .svg-cursor {
+  fill: rgb(0, 255, 0);
   cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
   .comment-window {
     width: 40rem;
+    padding: 2rem;
   }
+
   .comment-box {
     width: 16em;
+  }
+
+  .close-img {
+    position: static;
+    padding-top: 0;
+  }
+
+  .close-img svg {
+    fill: black;
   }
 }
