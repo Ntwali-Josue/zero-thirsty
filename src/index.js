@@ -1,8 +1,8 @@
 import './style.css';
 import logo from './images/logo.png';
 import heart from './images/unfilled-heart.svg';
-import Drink from './drink.js';
-import Comment from './comment.js';
+import Drink from './drink';
+import Comment from './comment';
 
 const logoImg = document.querySelector('.logo');
 logoImg.src = logo;
