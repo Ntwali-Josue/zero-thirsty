@@ -59,8 +59,8 @@ numOfLikes.forEach((num) => {
 for (let i = 0; i < likeButton.length; i += 1) {
   let counter = 0;
   likeButton[i].addEventListener('click', () => {
-    // eslint-disable-next-line no-multi-assign
-    numOfLikes[i].textContent = counter += 1;
+    counter += 1;
+    numOfLikes[i].textContent = counter;
     addLikes(drinkId[i]);
     likeButton[i].src = heartFilled;
   });
