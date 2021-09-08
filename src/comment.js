@@ -16,6 +16,7 @@ class Comment {
 
   static loadContent = (drink) => {
     const comentWindow = document.getElementById('comment-window');
+    document.getElementById('main').classList += ' blur';
     comentWindow.innerHTML = commentSection;
     comentWindow.classList = 'comment-window';
     document.getElementById('drink-img').src = drink.strDrinkThumb;

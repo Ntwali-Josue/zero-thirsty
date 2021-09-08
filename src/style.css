@@ -3,6 +3,15 @@
   margin: 0;
 }
 
+main {
+  filter: blur(0);
+  transition: all ease 0.5s;
+}
+
+.blur {
+  filter: blur(0.25rem);
+}
+
 .comment-window {
   display: block;
   padding: 1rem;
