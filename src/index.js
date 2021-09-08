@@ -7,7 +7,6 @@ const logoImg = document.querySelector('.logo');
 logoImg.src = logo;
 const drinkImage = document.querySelectorAll('.card-img-top');
 const drinkTitle = document.querySelectorAll('.card-title');
-// const drinkLikes = document.querySelectorAll('.card-text');
 const likeButton = document.querySelectorAll('#like');
 const numOfLikes = document.querySelectorAll('.counter');
 likeButton.forEach((img) => {
