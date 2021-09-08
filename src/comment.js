@@ -6,6 +6,13 @@ class Comment {
     this.commenterData = {};
   }
 
+  commentCounter = () => {
+    const commentNumber = this.comments.length;
+    document.getElementById('comment-counter').innerHTML = `Comments (${commentNumber})`;
+    this.comments = [];
+    return commentNumber;
+  }
+
   loadContent = (drink) => {
     const comentWindow = document.getElementById('comment-window');
     document.getElementById('main').classList += ' blur';
@@ -28,6 +35,7 @@ class Comment {
         li.innerHTML = `${comment.creation_date} - ${comment.username}: ${comment.comment}`;
         ul.appendChild(li);
       });
+      this.commentCounter(this.comments);
     }
   }
 
