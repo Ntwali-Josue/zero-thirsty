@@ -57,7 +57,6 @@ numOfLikes.forEach((num) => {
 });
 
 for (let i = 0; i < likeButton.length; i += 1) {
-  // eslint-disable-next-line no-loop-func
   likeButton[i].addEventListener('click', () => {
     addLikes(drinkId[i]);
     likeButton[i].src = heartFilled;
