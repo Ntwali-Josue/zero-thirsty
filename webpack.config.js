@@ -1,3 +1,4 @@
+/* eslint-disable */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -30,6 +31,13 @@ const config = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
       },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+        options: {
+          sources: false,
+        },
+      },
     ],
   },
   plugins: [
@@ -40,3 +48,4 @@ const config = {
 };
 
 module.exports = config;
+/* eslint-enable */
