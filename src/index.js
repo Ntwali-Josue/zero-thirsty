@@ -36,6 +36,13 @@ document.getElementById('main').addEventListener('click', async (event) => {
     const apiDrink = await Drink.getDrinkDetails(event);
     const drink = new Drink(apiDrink.idDrink);
     Comment.loadContent(apiDrink);
+    const comments = await Comment.getComments(drink.id);
+    Comment.loadComments(comments);
+
+    document.getElementById('send-comment').addEventListener('click', async () => {
+      const commenter = Comment.getCommenterData();
+      Comment.sendComment(drink.id, commenter);
+    });
 
     document.getElementById('close').addEventListener('click', () => {
       const comentWindow = document.getElementById('comment-window');
@@ -43,12 +50,7 @@ document.getElementById('main').addEventListener('click', async (event) => {
       comentWindow.classList = 'comment-off';
       document.getElementById('main').classList = 'row item m-5';
     });
-
-    document.getElementById('send-comment').addEventListener('click', async () => {
-    });
   }
 });
-
-
 
 getDrinks();

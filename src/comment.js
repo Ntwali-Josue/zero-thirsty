@@ -14,13 +14,46 @@ class Comment {
     document.getElementById('measure').innerHTML = `<strong>Measure: </strong>${drink.strMeasure1}`;
   }
 
-  static involveAPI = async () => {
-    const comment = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/3DpePqRJE0nWUgbeh7sC/comments';
-    const fetchDrink = await fetch(comment, {
+  static loadComments = (comments) => {
+    if (comments.length > 0) {
+      const ul = document.getElementById('comments');
+      comments.forEach((comment) => {
+        const li = document.createElement('li');
+        li.innerHTML = `${comment.creation_date} - ${comment.username}: ${comment.comment}`;
+        ul.appendChild(li);
+      });
+    }
+  }
+
+  static sendComment = async (drinkID, commenter) => {
+    const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/3DpePqRJE0nWUgbeh7sC/comments';
+    await fetch(url, {
+      method: 'POST',
+      headers: {
+        Accept: 'text/plain',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        item_id: drinkID,
+        username: commenter.username,
+        comment: commenter.comment,
+      }),
+    });
+  }
+
+  static getComments = async (drinkID) => {
+    const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/3DpePqRJE0nWUgbeh7sC/comments?item_id=';
+    const fetchDrink = await fetch((url + drinkID), {
       method: 'GET',
     });
     const data = await fetchDrink.json();
-    console.log(data);
+    return data;
+  }
+
+  static getCommenterData = () => {
+    const username = document.getElementById('commenter-name').value;
+    const comment = document.getElementById('comment-body').value;
+    return { username, comment };
   }
 }
 
