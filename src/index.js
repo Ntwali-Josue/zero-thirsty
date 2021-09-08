@@ -33,8 +33,9 @@ const getDrinks = async () => {
 
 document.getElementById('main').addEventListener('click', async (event) => {
   if (event.target.id.includes('drink')) {
-    const drink = await Drink.getDrinkDetails(event);
-    Comment.loadContent(drink);
+    const apiDrink = await Drink.getDrinkDetails(event);
+    const drink = new Drink(apiDrink.idDrink);
+    Comment.loadContent(apiDrink);
 
     document.getElementById('close').addEventListener('click', () => {
       const comentWindow = document.getElementById('comment-window');
@@ -42,7 +43,12 @@ document.getElementById('main').addEventListener('click', async (event) => {
       comentWindow.classList = 'comment-off';
       document.getElementById('main').classList = 'row item m-5';
     });
+
+    document.getElementById('send-comment').addEventListener('click', async () => {
+    });
   }
 });
+
+
 
 getDrinks();
