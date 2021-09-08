@@ -54,8 +54,11 @@ main {
 }
 
 .svg-cursor {
-  fill: rgb(0, 255, 0);
   cursor: pointer;
+}
+
+.ul-comment li {
+  list-style: none;
 }
 
 @media screen and (min-width: 768px) {
