@@ -29,7 +29,7 @@ const getDrinks = async () => {
   for (let i = 0; i < drinkImage.length; i += 1) {
     drinkImage[i].src = data.drinks[i].strDrinkThumb;
     drinkTitle[i].textContent = data.drinks[i].strDrink;
-    drinkId[i] = data.drinks[i].strDrink;
+    drinkId[i] = data.drinks[i].idDrink;
     commentButton[i].id = `drink${data.drinks[i].idDrink}`;
     commentButton[i].href = `#${data.drinks[i].strDrink}`;
   }
