@@ -1,13 +1,15 @@
 import './style.css';
 import logo from './images/logo.png';
 import heart from './images/unfilled-heart.svg';
-import commentSection from './comment.html';
+import Drink from './drink.js';
+import Comment from './comment.js';
 
 const logoImg = document.querySelector('.logo');
 logoImg.src = logo;
 const drinkImage = document.querySelectorAll('.card-img-top');
 const drinkTitle = document.querySelectorAll('.card-title');
 const likeButton = document.querySelectorAll('#like');
+const commentButton = document.querySelectorAll('.btn-primary');
 likeButton.forEach((img) => {
   img.src = heart;
 });
@@ -22,15 +24,24 @@ const getDrinks = async () => {
   for (let i = 0; i < drinkImage.length; i += 1) {
     drinkImage[i].src = data.drinks[i].strDrinkThumb;
     drinkTitle[i].textContent = data.drinks[i].strDrink;
+    commentButton[i].id = `drink${data.drinks[i].idDrink}`;
+    commentButton[i].href = `#${data.drinks[i].strDrink}`;
   }
 
   return data;
 };
 
-window.addEventListener('click', () => {
-  const commentWindow = document.getElementById('comment-window');
-  commentWindow.innerHTML = commentSection;
-  commentWindow.classList = 'comment-window';
+document.getElementById('main').addEventListener('click', async (event) => {
+  if (event.target.id.includes('drink')) {
+    const drink = await Drink.getDrinkDetails(event);
+    Comment.loadContent(drink);
+
+    document.getElementById('close').addEventListener('click', () => {
+      const comentWindow = document.getElementById('comment-window');
+      comentWindow.innerHTML = '';
+      comentWindow.classList = 'comment-off';
+    });
+  }
 });
 
 getDrinks();
