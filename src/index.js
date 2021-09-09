@@ -66,16 +66,16 @@ document.getElementById('main').addEventListener('click', async (event) => {
   }
 });
 
+cardLikes();
 getDrinks();
 
-for (let i = 0; i < likeButton.length; i += 1) {
-  let counter = 0;
-  likeButton[i].addEventListener('click', () => {
-    counter += 1;
-    numOfLikes[i].textContent = counter;
-    addLikes(drinkId[i]);
-    likeButton[i].src = heartFilled;
-  });
-}
+// for (let i = 0; i < likeButton.length; i += 1) {
+//   let counter = 0;
+//   likeButton[i].addEventListener('click', () => {
+//     counter += 1;
+//     numOfLikes[i].textContent = counter;
+//     addLikes(drinkId[i]);
+//     likeButton[i].src = heartFilled;
+//   });
+// }
 
-cardLikes();
