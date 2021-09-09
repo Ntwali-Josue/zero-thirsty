@@ -24,7 +24,6 @@ const cardLikes = async () => {
         likeButton[i].addEventListener('click', () => {
           counter += 1;
           numOfLikes[i].textContent = counter;
-          console.log(itemID);
           addLikes(itemID);
         });
         numOfLikes[i].textContent = counter;
