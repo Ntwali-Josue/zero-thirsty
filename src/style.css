@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&family=Oregano&display=swap');
 
 body {
   padding: 0;
@@ -13,6 +13,7 @@ body {
 
 .nav-link {
   color: hsl(325, 45%, 25%);
+  font-family: 'Oregano', cursive;
 }
 
 .nav-link:hover {
@@ -43,6 +44,7 @@ main {
   width: 18.5rem;
   background-color: hsl(20, 15%, 80%);
   color: hsl(325, 65%, 10%);
+  font-family: 'Signika', sans-serif;
   border: 1px solid hsla(15, 92%, 5%, 0.5);
   z-index: 5;
   box-shadow: 0 0 0.5rem 0.5rem hsla(0, 0%, 0%, 0.25);
