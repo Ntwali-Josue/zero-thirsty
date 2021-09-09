@@ -14,6 +14,10 @@ const drinkTitle = document.querySelectorAll('.card-title');
 const likeButton = document.querySelectorAll('#like');
 const numOfLikes = document.querySelectorAll('.counter');
 const commentButton = document.querySelectorAll('.btn-primary');
+const cardsContainer = document.querySelectorAll('.drink');
+const totalCocktails = document.querySelector('.cocktails');
+
+totalCocktails.innerHTML += `(${cardsContainer.length})`;
 
 likeButton.forEach((img) => {
   img.src = heart;
