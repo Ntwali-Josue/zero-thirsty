@@ -5,6 +5,8 @@
 import comment from '../src/comment.js';
 import commentHTML from './_comment.html';
 
+jest.mock('../src/comment.js');
+
 beforeAll( async () => {
   document.body.innerHTML = commentHTML;
   comment.getCommenterData();

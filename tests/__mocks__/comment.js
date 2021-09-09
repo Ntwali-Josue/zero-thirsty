@@ -1,4 +1,5 @@
 import commentSection from './comment.html';
+import fetch from 'cross-fetch';
 
 class Comment {
   constructor() {
@@ -40,7 +41,7 @@ class Comment {
   }
 
   sendComment = async (drinkID, commenter) => {
-    const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/0SK6xo1aXMm23qjduC9O/comments';
+    const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/3DpePqRJE0nWUgbeh7sC/comments';
     await fetch(url, {
       method: 'POST',
       headers: {
@@ -56,7 +57,7 @@ class Comment {
   }
 
   getComments = async (drinkID) => {
-    const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/0SK6xo1aXMm23qjduC9O/comments?item_id=';
+    const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/3DpePqRJE0nWUgbeh7sC/comments?item_id=';
     const fetchDrink = await fetch((url + drinkID), {
       method: 'GET',
     });

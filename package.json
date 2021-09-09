@@ -19,7 +19,7 @@
       "\\.[jt]sx?$": "babel-jest",
       "^.+\\.html$": "html-loader-jest"
     }
- },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ntwali-Josue/kanband-board.git"
@@ -55,5 +55,8 @@
     "webpack": "^5.52.0",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "cross-fetch": "^3.1.4"
   }
 }
