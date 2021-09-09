@@ -58,7 +58,7 @@ document.getElementById('main').addEventListener('click', async (event) => {
       const comentWindow = document.getElementById('comment-window');
       comentWindow.innerHTML = '';
       comentWindow.classList = 'comment-off';
-      document.getElementById('main').classList = 'row item m-5';
+      document.getElementById('main').classList = 'row item container-lg m-auto';
     });
   }
 });

@@ -1,6 +1,23 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap');
+
+body {
   padding: 0;
   margin: 0;
+  font-family: 'Dosis', sans-serif;
+  background-image: linear-gradient(hsl(20, 60%, 55%), hsl(300, 22%, 42%));
+}
+
+.nav {
+  background-image: linear-gradient(hsl(15, 60%, 35%), hsl(15, 60%, 60%));
+  /* background-color: hsl(25, 60%, 55%); */
+}
+
+.nav-link {
+  color: hsl(325, 65%, 20%);
+}
+
+.nav-link:hover {
+  color: hsl(325, 65%, 10%);
 }
 
 main {
@@ -21,8 +38,9 @@ main {
   transform: translate(-50%, 0);
   height: auto;
   width: 18.5rem;
-  background-color: white;
-  border: 1px solid black;
+  background-image: linear-gradient(hsl(15, 15%, 75%), hsl(15, 15%, 55%));
+  color: hsl(325, 65%, 10%);
+  border: 1px solid hsla(15, 92%, 5%, 0.5);
   z-index: 5;
   box-shadow: 0 0 0.5rem 0.5rem hsla(0, 0%, 0%, 0.25);
   transition: all 1s ease;
