@@ -5,7 +5,6 @@ const fetchUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capston
 const numOfLikes = document.querySelectorAll('.counter');
 const drinkTitle = document.querySelectorAll('.card-title');
 const likeButton = document.querySelectorAll('#like');
-const drinkId = [];
 
 const cardLikes = async () => {
   const fetchLikes = await fetch(fetchUrl, {
