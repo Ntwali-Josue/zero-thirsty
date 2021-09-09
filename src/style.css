@@ -4,16 +4,15 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Dosis', sans-serif;
-  background-image: linear-gradient(hsl(20, 60%, 55%), hsl(300, 22%, 42%));
+  background-image: linear-gradient(hsl(25, 15%, 70%), hsl(25, 15%, 60%));
 }
 
 .nav {
-  background-image: linear-gradient(hsl(15, 60%, 35%), hsl(15, 60%, 60%));
-  /* background-color: hsl(25, 60%, 55%); */
+  background-image: linear-gradient(hsl(15, 60%, 45%), hsl(15, 60%, 60%));
 }
 
 .nav-link {
-  color: hsl(325, 65%, 20%);
+  color: hsl(325, 45%, 25%);
 }
 
 .nav-link:hover {
@@ -29,6 +28,10 @@ main {
   filter: blur(0.25rem);
 }
 
+.card {
+  background-color: hsl(20, 15%, 80%) !important;
+}
+
 .comment-window {
   display: block;
   padding: 1rem;
@@ -38,7 +41,7 @@ main {
   transform: translate(-50%, 0);
   height: auto;
   width: 18.5rem;
-  background-image: linear-gradient(hsl(15, 15%, 75%), hsl(15, 15%, 55%));
+  background-color: hsl(20, 15%, 80%);
   color: hsl(325, 65%, 10%);
   border: 1px solid hsla(15, 92%, 5%, 0.5);
   z-index: 5;
@@ -79,9 +82,14 @@ main {
   list-style: none;
 }
 
+footer {
+  background-color: hsl(20, 15%, 20%);
+  color: hsl(20, 15%, 80%);
+}
+
 @media screen and (min-width: 768px) {
   .comment-window {
-    width: 40rem;
+    width: 35rem;
     padding: 2rem;
   }
 
