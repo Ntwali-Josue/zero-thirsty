@@ -5,6 +5,7 @@ import heartFilled from './images/filled-heart.svg';
 import Drink from './drink';
 import Comment from './comment';
 import addLikes from './addLike';
+import cardLikes from './cardLikes';
 
 const logoImg = document.querySelector('.logo');
 logoImg.src = logo;
@@ -13,6 +14,7 @@ const drinkTitle = document.querySelectorAll('.card-title');
 const likeButton = document.querySelectorAll('#like');
 const numOfLikes = document.querySelectorAll('.counter');
 const commentButton = document.querySelectorAll('.btn-primary');
+
 likeButton.forEach((img) => {
   img.src = heart;
 });
@@ -52,10 +54,6 @@ document.getElementById('main').addEventListener('click', async (event) => {
 
 getDrinks();
 
-numOfLikes.forEach((num) => {
-  num.textContent = 0;
-});
-
 for (let i = 0; i < likeButton.length; i += 1) {
   let counter = 0;
   likeButton[i].addEventListener('click', () => {
@@ -65,3 +63,5 @@ for (let i = 0; i < likeButton.length; i += 1) {
     likeButton[i].src = heartFilled;
   });
 }
+
+cardLikes();
