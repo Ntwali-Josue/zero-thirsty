@@ -1,10 +1,11 @@
-/* eslint-disable no-loop-func */
 import heartFilled from './images/filled-heart.svg';
+import addLikes from './addLike';
 
 const fetchUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/0SK6xo1aXMm23qjduC9O/likes';
 const numOfLikes = document.querySelectorAll('.counter');
 const drinkTitle = document.querySelectorAll('.card-title');
 const likeButton = document.querySelectorAll('#like');
+const drinkId = [];
 
 const cardLikes = async () => {
   const fetchLikes = await fetch(fetchUrl, {
@@ -20,13 +21,16 @@ const cardLikes = async () => {
     const itemID = response[i].item_id;
     drinkTitle.forEach((title) => {
       if (title.textContent === itemID) {
-        // console.log(title.textContent);
-        // console.log(numOfLikes[i].textContent);
-        // console.log(response[i].likes);
-        numOfLikes[i].textContent = response[i].likes;
+        let counter = response[i].likes;
+        likeButton[i].addEventListener('click', () => {
+          counter += 1;
+          numOfLikes[i].textContent = counter;
+          console.log(itemID);
+          addLikes(itemID);
+        });
+        numOfLikes[i].textContent = counter;
         likeButton[i].src = heartFilled;
       }
-      numOfLikes[i].textContent = response[i].likes;
     });
   }
 };
