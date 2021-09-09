@@ -71,8 +71,14 @@ main {
 }
 
 .comment-box {
-  width: 15em;
   resize: none;
+  height: 6rem;
+}
+
+.comment-box,
+.name-field {
+  width: 14rem;
+  background-color: lavenderblush;
 }
 
 .svg-cursor {
@@ -92,10 +98,6 @@ footer {
   .comment-window {
     width: 35rem;
     padding: 2rem;
-  }
-
-  .comment-box {
-    width: 16em;
   }
 
   .close-img {
