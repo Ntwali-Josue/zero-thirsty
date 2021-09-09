@@ -17,7 +17,7 @@ class Comment {
     const comentWindow = document.getElementById('comment-window');
     document.getElementById('main').classList += ' blur';
     comentWindow.innerHTML = commentSection;
-    comentWindow.classList = 'comment-window';
+    comentWindow.classList = 'comment-window rounded';
     document.getElementById('drink-img').src = drink.strDrinkThumb;
     document.getElementById('drink-name').innerHTML = drink.strDrink;
     document.getElementById('category').innerHTML = `<strong>Category: </strong>${drink.strCategory}`;
@@ -32,7 +32,8 @@ class Comment {
       ul.innerHTML = '';
       this.comments.forEach((comment) => {
         const li = document.createElement('li');
-        li.innerHTML = `${comment.creation_date} - ${comment.username}: ${comment.comment}`;
+        li.innerHTML = `${comment.creation_date} 
+          - <strong>${comment.username}:</strong> ${comment.comment}`;
         ul.appendChild(li);
       });
       this.commentCounter(this.comments);
