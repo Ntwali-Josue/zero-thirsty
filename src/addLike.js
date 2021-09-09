@@ -1,4 +1,4 @@
-const fetchUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/3DpePqRJE0nWUgbeh7sC/likes';
+const fetchUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/0SK6xo1aXMm23qjduC9O/likes';
 
 const addLikes = async (drinkID) => {
   const postLikes = await fetch(fetchUrl, {
