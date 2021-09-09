@@ -1,16 +1,20 @@
 /**
  * @jest-environment jsdom
  */
-const main = document.querySelectorAll('.cards');
+import items from './_items.html';
+
+document.body.innerHTML = items;
+const getDrinks = document.querySelectorAll('.drink');
 const counter = document.querySelector('.cocktails');
-console.log(main.length);
+counter.innerHTML = getDrinks.length;
 
 describe('All items counter', () => {
-  = test('should be defined', () => {
-    expect(main).not.toBeNull();
+  test('should be defined', () => {
+    expect(getDrinks).not.toBeNull();
     expect(counter).not.toBeNull();
   });
   test('should display total number of items', () => {
-    expect(counter.innerHTML).toEqual(main.length);
+    const itemCounter = getDrinks.length.toString();
+    expect(counter.innerHTML).toEqual(itemCounter);
   });
 });
