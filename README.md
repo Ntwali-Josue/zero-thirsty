@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Zero-thirsty
+# Zero-Thirsty
 
 > This project is a webapp which displays list of cocktail drinks to the user.
 
@@ -68,9 +68,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- This app would not be possible without [TheCocktailDB](https://www.thecocktaildb.com/api.php) API.
+- Thanks to Microverse [Involvement](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270) API.
 
 ## 📝 License
 
