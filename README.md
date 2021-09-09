@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Zero-thirsty
 
 > This project is a webapp which displays list of cocktail drinks to the user.
 
