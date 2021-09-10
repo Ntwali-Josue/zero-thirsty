@@ -1,65 +1,66 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Zero-Thirsty
 
-> One paragraph statement about the project.
+> This project is a webapp which displays list of cocktail drinks to the user.
 
-![screenshot](./app_screenshot.png)
+![screenshot](https://user-images.githubusercontent.com/58233753/132763985-490b219a-ffaa-4383-9e42-34d8c0ce0b9b.png)
 
-Additional description about the project and its features.
+In the app the user can like and comment on any drinks he favors, and the reactions are saved for future visitors who might want to see the past reactions on a given drink.
 
-## Built With
+## Built With 
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML, JAVASCRIPT, CSS, JEST
+- Boostrap
+- Webpack, Linters, Git
 
-## Live Demo
+## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://ntwali-josue.github.io/javascript-capstone/)
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+## Getting Started 
+**To get started with the project, you can use the [Live Demo Link](https://ntwali-josue.github.io/javascript-capstone/) to access the website and interact with the features.**
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Prerequisites 📌
+- `Node.js` installed.
+- `Git` installed.
 
-### Setup
+### Setup 🔂 
+- Clone this repository by running `git clone https://github.com/Ntwali-Josue/javascript-capstone.git` in your terminal.
 
-### Install
+### Install ⚙️
+- Run `npm install` in your terminal to install the dependencies.
 
-### Usage
+### Usage 💻
+- Run `npm run start` for webpack to run and open your application in the browser.
 
-### Run tests
+### Run tests 🔎
+- Run `npm test` to run all the tests.
 
-### Deployment
+### Deployment  🌐
+- Run `npm run build` && `npm run deploy` to deploy the application.
 
+## Authors 👨🏾‍💻
 
+👤 **KARANGWA Ntwali Josue**
 
-## Authors
+- GitHub: [@Ntwali-Josue](https://github.com/Ntwali-Josue)
+- Twitter: [@JosueNtwali](https://twitter.com/JosueNtwali)
+- LinkedIn: [karangwa](https://linkedin.com/in/karangwa)
 
-👤 **Author1**
+👤 **Ángel Díaz**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@ad9311](https://github.com/ad9311)
+- Twitter: [@adiaz9311](https://twitter.com/adiaz9311)
+- LinkedIn: [ad9311](https://linkedin.com/in/ad9311)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Ntwali-Josue/javascript-capstone/issues/).
 
 ## Show your support
 
@@ -67,9 +68,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- This app would not be possible without [TheCocktailDB](https://www.thecocktaildb.com/api.php) API.
+- Thanks to Microverse [Involvement](https://www.notion.so/Involvement-API-869e60b5ad104603aa6db59e08150270) API.
 
 ## 📝 License
 

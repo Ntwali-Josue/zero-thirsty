@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&family=Oregano&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
+  background-image: linear-gradient(hsl(25, 15%, 70%), hsl(25, 15%, 60%));
+}
+
+.nav {
+  background-image: linear-gradient(hsl(15, 60%, 45%), hsl(15, 60%, 60%));
+}
+
+.nav-link {
+  color: hsl(325, 45%, 25%);
+  font-family: 'Oregano', cursive;
+}
+
+.nav-link:hover {
+  color: hsl(325, 65%, 10%);
+}
+
+main {
+  filter: blur(0);
+  transition: all ease 0.5s;
+}
+
+.blur {
+  filter: blur(0.25rem);
+}
+
+.card {
+  background-color: hsl(20, 15%, 80%) !important;
+}
+
+.comment-window {
+  display: block;
+  padding: 1rem;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: auto;
+  width: 18.5rem;
+  background-color: hsl(20, 15%, 80%);
+  color: hsl(325, 65%, 10%);
+  border: 1px solid hsla(15, 92%, 5%, 0.5);
+  z-index: 5;
+  box-shadow: 0 0 0.5rem 0.5rem hsla(0, 0%, 0%, 0.25);
+  transition: all 1s ease;
+}
+
+.comment-off {
+  height: 0;
+}
+
+.close-img {
+  position: relative;
+  z-index: 6;
+  right: 20%;
+  padding-top: 0.9rem;
+}
+
+.close-img svg {
+  fill: white;
+}
+
+.inner-container {
+  margin: auto;
+  max-width: 30rem;
+}
+
+.comment-box {
+  resize: none;
+  height: 6rem;
+}
+
+.comment-box,
+.name-field {
+  width: 14rem;
+  background-color: lavenderblush;
+}
+
+.svg-cursor {
+  cursor: pointer;
+}
+
+.ul-comment li {
+  list-style: none;
+}
+
+footer {
+  background-color: hsl(20, 15%, 20%);
+  color: hsl(20, 15%, 80%);
+}
+
+@media screen and (min-width: 768px) {
+  .comment-window {
+    width: 35rem;
+    padding: 2rem;
+  }
+
+  .close-img {
+    position: static;
+    padding-top: 0;
+  }
+
+  .close-img svg {
+    fill: black;
+  }
+}
