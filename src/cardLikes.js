@@ -4,7 +4,7 @@ import addLikes from './addLike';
 const fetchUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/0SK6xo1aXMm23qjduC9O/likes';
 const numOfLikes = document.querySelectorAll('.counter');
 const drinkTitle = document.querySelectorAll('.card-title');
-const likeButton = document.querySelectorAll('#like');
+const likeButton = document.querySelectorAll('.like');
 
 const cardLikes = async () => {
   const fetchLikes = await fetch(fetchUrl, {
