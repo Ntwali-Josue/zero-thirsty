@@ -9,7 +9,7 @@ const logoImg = document.querySelector('.logo');
 logoImg.src = logo;
 const drinkImage = document.querySelectorAll('.card-img-top');
 const drinkTitle = document.querySelectorAll('.card-title');
-const likeButton = document.querySelectorAll('#like');
+const likeButton = document.querySelectorAll('.like');
 const commentButton = document.querySelectorAll('.btn-primary');
 const cardsContainer = document.querySelectorAll('.drink');
 const totalCocktails = document.querySelector('.cocktails');
@@ -33,14 +33,15 @@ const getDrinks = async () => {
     drinkImage[i].src = data.drinks[i].strDrinkThumb;
     drinkTitle[i].textContent = data.drinks[i].strDrink;
     drinkId[i] = data.drinks[i].strDrink;
-    commentButton[i].id = `drink${data.drinks[i].idDrink}`;
+    likeButton[i].id = `like${data.drinks[i].idDrink}`;
+    commentButton[i].id = `comment${data.drinks[i].idDrink}`;
     commentButton[i].href = `#${data.drinks[i].strDrink}`;
   }
   return data;
 };
 
 document.getElementById('main').addEventListener('click', async (event) => {
-  if (event.target.id.includes('drink')) {
+  if (event.target.id.includes('comment')) {
     const apiDrink = await Drink.getDrinkDetails(event);
     const drink = new Drink(apiDrink.idDrink);
     comment.loadContent(apiDrink);
