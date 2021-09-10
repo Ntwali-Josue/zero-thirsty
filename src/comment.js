@@ -58,11 +58,13 @@ class Comment {
 
   getComments = async (drinkID) => {
     const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/0SK6xo1aXMm23qjduC9O/comments?item_id=';
-    const fetchDrink = await fetch((url + drinkID), {
+    const fetchComment = await fetch((url + drinkID), {
       method: 'GET',
     });
-    const data = await fetchDrink.json();
-    this.comments = data;
+    const data = await fetchComment.json();
+    if (fetchComment.ok) {
+      this.comments = data;
+    }
   }
 
   getCommenterData = () => {
