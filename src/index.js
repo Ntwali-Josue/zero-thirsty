@@ -64,5 +64,7 @@ document.getElementById('main').addEventListener('click', async (event) => {
   }
 });
 
-cardLikes();
-getDrinks();
+document.addEventListener("DOMContentLoaded", () => {
+  cardLikes();
+  getDrinks();
+});
