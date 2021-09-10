@@ -25,9 +25,9 @@ const cardLikes = async () => {
           counter += 1;
           numOfLikes[i].textContent = counter;
           addLikes(itemID);
+          likeButton[i].src = heartFilled;
         });
         numOfLikes[i].textContent = counter;
-        likeButton[i].src = heartFilled;
       }
     });
   }
