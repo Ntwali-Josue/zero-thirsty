@@ -16,10 +16,10 @@ In the app the user can like and comment on any drinks he favors, and the reacti
 
 ## Live Demo 
 
-[Live Demo Link](https://ntwali-josue.github.io/javascript-capstone/)
+[Live Demo Link](https://ntwali-josue.github.io/zero-thirsty/)
 
 ## Getting Started 
-**To get started with the project, you can use the [Live Demo Link](https://ntwali-josue.github.io/javascript-capstone/) to access the website and interact with the features.**
+**To get started with the project, you can use the [Live Demo Link](https://ntwali-josue.github.io/zero-thirsty/) to access the website and interact with the features.**
 
 To get a local copy up and running follow these simple example steps.
 
